@@ -1,8 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
-
+import { signupReducer } from '../redux/signup';
+import { imgUploadReducer } from "../redux/imageuploadSlice"
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    signupReducer,
+    imgUploadReducer
   },
 });
